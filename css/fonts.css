@@ -1,0 +1,47 @@
+/* Local fonts only. Every file lives in site/fonts/; nothing is loaded from another origin. */
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("../fonts/InstrumentSerif-Regular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("../fonts/InstrumentSerif-Italic.ttf") format("truetype");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Variable.ttf") format("truetype");
+  font-weight: 100 1000; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Italic-Variable.ttf") format("truetype");
+  font-weight: 100 1000; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Pinyon Script";
+  src: url("../fonts/PinyonScript-Regular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/Caveat-Variable.ttf") format("truetype");
+  font-weight: 400 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Silkscreen";
+  src: url("../fonts/Silkscreen-Regular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+
+:root {
+  --font-serif: "Instrument Serif", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-script: "Pinyon Script", "Snell Roundhand", "Brush Script MT", cursive;
+  --font-pixel: "Silkscreen", "Pixelify Sans", ui-monospace, Menlo, monospace;
+  --font-hand: "Caveat", "Bradley Hand", "Marker Felt", "DM Sans", sans-serif;
+  --font-type: "Courier Prime", "Courier New", Courier, "Nimbus Mono PS", monospace;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}

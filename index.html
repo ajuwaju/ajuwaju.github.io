@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; manifest-src 'self'; form-action 'self'; base-uri 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="color-scheme" content="light dark">
+  <title>allanah</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="has-flowers">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <a class="masthead-name" href="index.html">allanah</a>
+    <nav class="masthead-nav" aria-label="Primary">
+      <a href="articles.html">articles</a><span aria-hidden="true">/</span>
+      <a href="scripts.html">scripts</a><span aria-hidden="true">/</span>
+      <a href="about.html">about</a><span aria-hidden="true">/</span>
+      <a href="about.html#contact">contact</a><span aria-hidden="true">/</span>
+      <button id="theme-toggle" type="button" aria-pressed="false">dark</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="desk">
+      <div class="desk-words">
+        <p class="type small">hi, i&#x27;m</p>
+        <h1 class="signature">allanah</h1>
+        <div class="index-card tilt-l">
+          <span class="tape"></span>
+          <p class="type">i write about <a href="articles.html?tag=gaming">games</a>, <a href="articles.html?tag=psychology">minds</a>, and <a href="articles.html?tag=tech">tech</a>. content writing is my day job. blog posts, guides, how-tos, and the odd video <a href="scripts.html">script</a>. i'm learning japanese on the side and sitting the n5 in december, with tokyo pencilled in for 2028.</p>
+        </div>
+        <p class="hand hand-note">the latest pages are just below
+          <svg class="arrow" viewBox="0 0 54 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6c14 2 26 10 36 17M31 23l9 1-1-9"/></svg>
+        </p>
+      </div>
+      <figure class="desk-photo empty tilt-r"><p class="hand">your first piece will sit here</p></figure>
+    </section>
+
+    <section aria-labelledby="latest">
+      <h2 id="latest" class="type-head"><span class="num">01</span><span>latest, pinned up</span></h2>
+      <ul class="gallery" data-gallery data-kind="article" data-limit="6" data-base="articles/"></ul>
+      <p class="hand hand-right"><a href="articles.html">see everything →</a></p>
+    </section>
+
+    <section aria-labelledby="scripts-h">
+      <h2 id="scripts-h" class="type-head"><span class="num">02</span><span>scripts, from the other desk</span></h2>
+      <ul class="gallery" data-gallery data-kind="script" data-limit="6" data-base="articles/"></ul>
+      <p class="type small" data-empty hidden>no scripts pinned yet.</p>
+      <p class="hand hand-right"><a href="scripts.html">all the scripts →</a></p>
+    </section>
+
+    <section class="margin-note" aria-labelledby="about-h">
+      <p class="hand side" id="about-h">about me, briefly</p>
+      <div>
+        <p class="serif-lg">i write the pieces i wish had existed back when i was the one searching. guides that respect your time and how-tos that assume you know nothing yet. <em>top rated on upwork, 100% job success</em>, and i still get nervous before every first draft.</p>
+        <p class="type small"><a href="about.html">the longer version →</a></p>
+      </div>
+    </section>
+
+    <section class="write" id="contact">
+      <p class="signature">write to me</p>
+      <div class="contacts"><p class="type"><span class="contact-k">email</span> <a href="mailto:allanahjunelle29@gmail.com">allanahjunelle29@gmail.com</a></p><p class="type"><span class="contact-k">whatsapp</span> <a href="https://wa.me/639338102793" target="_blank" rel="noopener noreferrer">+63 933 810 2793</a></p></div>
+    </section>
+  </main>
+
+  <footer class="colophon type small">
+    <svg class="pixel" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path fill="#e0609d" d="M3 0h2v1H3zM1 1h2v1H1zm4 0h2v1H5zM0 2h2v1H0zm6 0h2v1H6zM0 5h2v1H0zm6 0h2v1H6zM1 6h2v1H1zm4 0h2v1H5zM3 7h2v1H3z"/><path fill="#f3a9cb" d="M2 2h4v4H2z"/><path fill="#fbe6f0" d="M3 3h2v2H3z"/></svg>
+    <span>made by hand. no trackers, and nothing loaded from anyone else.</span>
+    <a href="about.html#privacy">how this site treats you</a>
+  </footer>
+  <script src="articles/manifest.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+</body>
+</html>

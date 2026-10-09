@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'self'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="color-scheme" content="light dark">
+  <title>poster maker · allanah</title>
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="poster.css">
+</head>
+<body>
+  <header class="top">
+    <a class="name" href="../index.html">allanah</a>
+    <span class="type">poster maker. your photo never leaves this browser.</span>
+  </header>
+
+  <main class="app">
+    <form class="panel" id="controls">
+      <label class="drop" id="drop">
+        <input type="file" id="photo" accept="image/*">
+        <span class="drop-title">drop a photo here</span>
+        <span class="type small">or click to choose one. jpg, png, webp, heic from safari.</span>
+      </label>
+
+      <label>look
+        <select id="recipe">
+          <option value="random">surprise me</option>
+          <option value="bubblegum">bubblegum panel</option>
+          <option value="light">light band</option>
+          <option value="scattered">scattered words</option>
+          <option value="crossword">crossword grid</option>
+          <option value="grain">grain headline</option>
+          <option value="zine">zine page</option>
+          <option value="birds">the birds (dither)</option>
+          <option value="army">army of me (lyrics sheet)</option>
+          <option value="girlhood">girlhood (invitation)</option>
+          <option value="pillow">pillow (double exposure)</option>
+          <option value="silk">silk (magazine column)</option>
+        </select>
+      </label>
+
+      <label>palette
+        <select id="palette">
+          <option value="random">surprise me</option>
+          <option value="bubblegum">bubblegum pink</option>
+          <option value="blush">blush and ink</option>
+          <option value="powder">powder blue</option>
+          <option value="sage">sage</option>
+          <option value="lilac">lilac</option>
+        </select>
+      </label>
+
+      <label>the big word <input id="word" placeholder="pink" maxlength="24"></label>
+      <label>a short line <input id="line" placeholder="light is not fading" maxlength="60"></label>
+      <label>a sentence to scatter <textarea id="sentence" rows="2" placeholder="i would say i love you but saying it out loud is hard"></textarea></label>
+      <div class="row">
+        <label>name <input id="name" placeholder="allanah" maxlength="30"></label>
+        <label>date <input id="date" placeholder="28/06/2026" maxlength="16"></label>
+      </div>
+
+      <fieldset class="photo-controls">
+        <legend>photo</legend>
+        <label>zoom <input type="range" id="zoom" min="0.6" max="2.4" step="0.02" value="1"></label>
+        <label>left / right <input type="range" id="panx" min="-1" max="1" step="0.01" value="0"></label>
+        <label>up / down <input type="range" id="pany" min="-1" max="1" step="0.01" value="0"></label>
+        <label>frame size <input type="range" id="frame" min="0.6" max="1.35" step="0.01" value="1"></label>
+        <p class="type small">or drag the photo in the preview. scroll on it to zoom.</p>
+        <button type="button" id="reset" class="small-btn">reset photo</button>
+      </fieldset>
+
+      <div class="actions">
+        <button type="button" id="shuffle" class="primary">shuffle</button>
+        <button type="button" id="download">download png</button>
+      </div>
+      <p class="type small" id="status">add a photo to begin.</p>
+    </form>
+
+    <section class="stage">
+      <canvas id="canvas" width="1200" height="1600" aria-label="poster preview"></canvas>
+    </section>
+  </main>
+
+  <script src="poster.js" defer></script>
+</body>
+</html>
